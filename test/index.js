@@ -187,7 +187,7 @@ describe('PostCSS Syntax Infer', () => {
 });
 
 describe('PostCSS Guidelines', () => {
-	const sandbox = sinon.sandbox.create();
+	const sandbox = sinon.createSandbox();
 	const CssSyntaxError = function (message, source) {
 		this.name = 'CssSyntaxError';
 		this.message = message;
